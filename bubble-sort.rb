@@ -6,11 +6,13 @@ def bubble_sort(unsorted_array)
   # unsorted_array[0] < unsorted_array[0 + 1] (continue case, add one to i)
     # i++ then next iteration of loop
   # unsorted_array[0] > unsorted_array[0+1] (switch then continue case)
+    q_nums_array = unsorted_array.slice!(i..i+1)
+    q_nums_array.reverse!
+    step_sort_array = q_nums_array + unsorted_array
     # unsorted_array[0].index = 0+1 
     # unsorted_array[0+1].index = 0
           # return new 2-numbered array using slice, then reverse those element. then push them back into array in reverse order
     # i++ then next iteration of loop
-  puts unsorted_array.join(' ')
   # Steps
   # selects two number to compare
   # if num[index] < num[index+1]
