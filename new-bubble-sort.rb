@@ -9,6 +9,7 @@ def bubble_sort(unsorted_numbers)
     unsorted_numbers[index] = next_number
     unsorted_numbers[index + 1] = current_number
   end
+  return unsorted_numbers
 end
 
 puts bubble_sort([6, 3, 2])
