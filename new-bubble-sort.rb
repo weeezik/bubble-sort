@@ -19,4 +19,4 @@ def bubble_sort(unsorted_numbers)
   return sorted_numbers
 end
 
-p bubble_sort([4,3,78,2,0,2])
+# p bubble_sort([4,3,78,2,0,2])
